@@ -8,8 +8,11 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
 
 import com.crm.qa.base.TestBase;
 
@@ -18,9 +21,9 @@ public class TestUtil extends TestBase
 	public static long PAGE_LOAD_TIMEOUT =20;
 	public static long IMPLICIT_WAIT =10;
 	public static long EXPLICIT_WAIT =20;
-	static XSSFWorkbook workbook;
-	static XSSFSheet sheet;
-	static Object[][] data;
+	public static XSSFWorkbook workbook;
+	public static XSSFSheet sheet;
+	public static Object[][] data;
 	
 	
 	/*public void switchToFrame()
@@ -77,6 +80,16 @@ public class TestUtil extends TestBase
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 		
 	}
+	
+	public static void clickElementByJs(WebElement element)
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+	}
+	
+	
+
 	
 	
 	

@@ -1,12 +1,19 @@
 package com.crm.qa.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -70,6 +77,23 @@ public class TestBase
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 	}
+	
+	public void failed(String testMethodName)
+	{
+		try 
+		{
+			File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("F:\\Sep2019\\FreeCRMTest\\screenshotsForFailedTests\\"+testMethodName+".jpg"));
+		} catch (WebDriverException e) 
+		{
+			e.printStackTrace();
+		} catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
 	
 	
 

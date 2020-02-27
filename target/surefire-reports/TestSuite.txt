@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 323.122 sec <<< FAILURE!
-selectContactsByNameTest(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 15.694 sec  <<< FAILURE!
+Tests run: 15, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 306.018 sec <<< FAILURE!
+selectContactsByNameTest(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 15.758 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Tom Holland']//preceding-sibling::td//input[@name='id']"}
-  (Session info: chrome=79.0.3945.130)
+  (Session info: chrome=80.0.3987.116)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'AKSHAYKALLURWAR', ip: '192.168.1.67', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_171'
+System info: host: 'AKSHAYKALLURWAR', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52332}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e2489160b78ac6a0f63ad610ec1ccdeb
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63166}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 02898d6dc11306a2fd794b39775cc22d
 *** Element info: {Using=xpath, value=//td[text()='Tom Holland']//preceding-sibling::td//input[@name='id']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -36,15 +36,15 @@ Session ID: e2489160b78ac6a0f63ad610ec1ccdeb
 	at com.crm.qa.pages.ContactsPage.selectContactsByName(ContactsPage.java:67)
 	at com.crm.qa.testcases.ContactsPageTest.selectContactsByNameTest(ContactsPageTest.java:55)
 
-selectMultipleContactsByNameTest(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 15.507 sec  <<< FAILURE!
+selectMultipleContactsByNameTest(com.crm.qa.testcases.ContactsPageTest)  Time elapsed: 15.533 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='Tom Holland']//preceding-sibling::td//input[@name='id']"}
-  (Session info: chrome=79.0.3945.130)
+  (Session info: chrome=80.0.3987.116)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'AKSHAYKALLURWAR', ip: '192.168.1.67', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_171'
+System info: host: 'AKSHAYKALLURWAR', ip: '192.168.0.4', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52473}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6671747e5c23e0552b5dcd32a7fec1f8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63295}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d14a771ae8a99b05ad62bc9a5b7da17a
 *** Element info: {Using=xpath, value=//td[text()='Tom Holland']//preceding-sibling::td//input[@name='id']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)

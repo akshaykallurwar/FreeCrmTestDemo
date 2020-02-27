@@ -6,7 +6,6 @@
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="selectMultipleContactsByNameTest"/>
           <include name="tearDown"/>
           <include name="selectContactsByNameTest"/>
         </methods>
