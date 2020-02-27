@@ -93,6 +93,8 @@ public class TestBase
 		}
 	}
 	
+	//Need to implement logic for DealsPage
+	
 	
 	
 	
