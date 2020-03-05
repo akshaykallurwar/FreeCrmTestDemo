@@ -20,6 +20,8 @@ import com.crm.qa.util.TestUtil;
 @Listeners(CustomListener.class)
 public class ContactsPageTest extends TestBase
 {
+
+//test
 	LoginPage loginPage;
 	ContactsPage contactsPage;
 	HomePage homePage;
