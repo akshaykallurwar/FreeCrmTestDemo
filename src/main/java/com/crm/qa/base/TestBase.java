@@ -80,7 +80,7 @@ public class TestBase
 	
 	public void failed(String testMethodName)
 	{
-		try 
+		try
 		{
 			File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(scrFile, new File("F:\\Sep2019\\FreeCRMTest\\screenshotsForFailedTests\\"+testMethodName+".jpg"));
