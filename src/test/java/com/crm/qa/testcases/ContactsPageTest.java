@@ -69,7 +69,7 @@ public class ContactsPageTest extends TestBase
 		boolean flag2 =contactsPage.selectContactsByName("Emma Watson");
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(flag1, "issue with first contact checkbox");
-		softAssert.assertTrue(flag2, "issue with first contact checkbox");
+		softAssert.assertTrue(flag2, "issue with second contact checkbox");
 		softAssert.assertAll();
 	}
 	
