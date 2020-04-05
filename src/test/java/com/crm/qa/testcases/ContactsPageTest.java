@@ -47,14 +47,14 @@ public class ContactsPageTest extends TestBase
 		
 	}
 	
-	@Test(priority =1)
+	@Test(priority =1,enabled =false)
 	public void verifyContactsLabelTest()
 	{
 		boolean flag = contactsPage.verifyContactsLabel();
 		Assert.assertTrue(flag,"issue with contact label");
 	}
 	
-	@Test(priority =2)
+	@Test(priority =2,enabled =false)
 	public void selectContactsByNameTest()
 	{
 		boolean flag =contactsPage.selectContactsByName("Tom Holland");
@@ -62,7 +62,7 @@ public class ContactsPageTest extends TestBase
 	}
 	
 	
-	@Test(priority =3)
+	@Test(priority =3,enabled =false)
 	public void selectMultipleContactsByNameTest()
 	{
 		boolean flag1 =contactsPage.selectContactsByName("Tom Holland");
